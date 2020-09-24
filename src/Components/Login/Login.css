@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+.login-form{
+    width: 410px;
+    border: 1px solid red;
+    padding: 30px 0px !important ;
+    border: 1px solid lightgray;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px lightcyan;
+}
+.input-field{
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    height: 30px;
+}
+.input-field:focus{
+    border: none;
+}
+input[type='checkbox']{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+input[type='submit']{
+    width: 350px;
+    font-weight: bold;
+}
+#or::before{
+    content: '----------------------';
+    
+}
+#or::after{
+    content: '-----------------------';
+}
+#or-wrapper{
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#or-wrapper button{
+    border-radius:50px !important;
+    border: 2px solid lightgray;
+}
+.google-sign-up{
+    padding: 0px 40px !important;
+}
+.toggle-text{
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: rgb(40, 182, 182);
+}

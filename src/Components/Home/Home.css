@@ -1,0 +1,31 @@
+.img{
+    width: 200px ;
+}
+.img:hover{
+    border: 2px solid orange;
+    border-radius: 15px;
+}
+
+.wrapper{
+   margin: 20px !important;
+}
+.img-title{
+    position: relative;
+    top: -50px;
+    margin-left: 35px;
+    color:white;
+}
+body{
+    /* background-image:url(../Image/Rectangle\ 1.png); */
+    
+}
+#destination-detail p{
+    font-weight: bold;
+    color:black;
+}
+#destination-detail h2{
+    font-weight: bold;
+}
+#destination-images button{
+    background-color: transparent !important;
+}

@@ -1,0 +1,33 @@
+*{
+    color: black;
+}
+.wrapper{
+    margin-top: 10px;
+}
+.form{
+    background-color: white;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+.inline-input{
+    width: 140px;
+}
+.submit{
+    width: 310px;
+    margin-left: 40px;
+}
+.booking-from label{
+    color: gray ;
+}
+.booking-from input{
+    height: 38px;
+    background-color:rgb(243, 237, 237);
+    border: none;
+}
+.description{
+    line-height: 1.8;
+    margin-top: 10px;
+}
+h2{
+    color: white;
+}
