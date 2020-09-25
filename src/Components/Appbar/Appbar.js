@@ -4,13 +4,26 @@ import './Appbar.css'
 import {Link, BrowserRouter as Router} from "react-router-dom";
 import SearchIcon from '../../img/Screenshot/Search.png';
 import { IsLoggedContext } from '../../App';
+import firebase from 'firebase';
+import FirebaseConfig from '../Login/FirebaseConfig';
+
+if(!firebase.apps.length){
+    firebase.initializeApp(FirebaseConfig);
+}
 
 const Appbar = (props) => {
     const navItems=['Home','Destination','Blog'];
     const [isLogged,setIsLogged]=useContext(IsLoggedContext) //if logged or not toggle login and log-out nav item
 
-    function handleLogOut(){ //no log-out route or component so it'shandled here
-        setIsLogged(false);
+    function handleLogOut(){ //no log-out route or component so it's handled here
+        firebase.auth().signOut()
+        .then(()=>{
+            setIsLogged(false);
+            window.location.replace('/login')
+        })
+        .catch((error)=> {
+            alert(error)
+        });
     }
 
     return (

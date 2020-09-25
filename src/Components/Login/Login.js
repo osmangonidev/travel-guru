@@ -7,9 +7,9 @@ import {faFacebook,faGoogle} from '@fortawesome/free-brands-svg-icons';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { IsLoggedContext } from '../../App';
 
-
-firebase.initializeApp(FirebaseConfig);
-
+if(!firebase.apps.length){
+    firebase.initializeApp(FirebaseConfig);
+}
 
 const Login = () => {
     

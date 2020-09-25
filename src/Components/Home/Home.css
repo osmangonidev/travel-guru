@@ -31,8 +31,8 @@ body{
     color:white;
 }
 .right-arrow{
-    margin-right: 600px !important;
+    margin-right: 525px !important;
 }
 .left-arrow{
-    margin-right: 100px;
+    margin-right: 100px !important;
 }
