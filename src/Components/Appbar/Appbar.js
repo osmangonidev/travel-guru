@@ -5,7 +5,7 @@ import {Link, BrowserRouter as Router} from "react-router-dom";
 import SearchIcon from '../../img/Screenshot/Search.png';
 import { IsLoggedContext } from '../../App';
 import firebase from 'firebase';
-import FirebaseConfig from '../Login/FirebaseConfig';
+import FirebaseConfig from '../../FirebaseConfig';
 
 if(!firebase.apps.length){
     firebase.initializeApp(FirebaseConfig);

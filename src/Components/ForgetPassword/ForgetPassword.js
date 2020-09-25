@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import firebase from 'firebase';
-import FirebaseConfig from '../../Login/FirebaseConfig';
+import FirebaseConfig from '../../FirebaseConfig';
 if (!firebase.apps.length) {
     firebase.initializeApp(FirebaseConfig);
  }

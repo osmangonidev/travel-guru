@@ -9,7 +9,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import HotelDetail from './Components/HotelDetail/HotelDetail';
 import DestinationBooking from './Components/DestinationBooking/DestinationBooking';
 import MapView from './Components/Map/MapView';
-import ForgetPassword from './Components/Login/ForgetPassword/ForgetPassword';
+import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
 export const IsLoggedContext=createContext()
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
       <div className="App">
         <Appbar></Appbar>
       </div>
+        <Switch>
         <Route exact path='/'>
           <Home></Home>
         </Route>
@@ -38,6 +39,10 @@ function App() {
         <Route path='/password-forget'>
           <ForgetPassword></ForgetPassword>
         </Route>
+        <Route path=''>
+            <h1 className='m-5 text-light'>404: Page not found</h1>
+        </Route>
+        </Switch>
     </Router>
     </IsLoggedContext.Provider>
   );

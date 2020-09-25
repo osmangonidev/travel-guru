@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 import React, { createContext,  useContext,  useState } from 'react';
-import FirebaseConfig from './FirebaseConfig';
+import FirebaseConfig from '../../FirebaseConfig';
 import './Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook,faGoogle} from '@fortawesome/free-brands-svg-icons';
