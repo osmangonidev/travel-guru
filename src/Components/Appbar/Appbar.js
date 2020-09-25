@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import logo from "./Logo.png"
+import logo from "../../img/Logo.png"
 import './Appbar.css'
 import {Link, BrowserRouter as Router} from "react-router-dom";
 import { IsLoggedContext } from '../../App';
