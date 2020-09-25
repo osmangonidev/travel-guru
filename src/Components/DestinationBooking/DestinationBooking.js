@@ -20,10 +20,10 @@ const DestinationBooking = () => {
             </div>
             <div className= "booking-form col-md-6 py-4  ">
                 <form action="" onSubmit={handleBookingSubmit}>
-                    <label htmlFor="" className='ml-5 py-1' >Origin</label><br/>
-                    <input  type="text" className="w-75 ml-5 pl-1 " name='origin' required/><br/>
+                    <label htmlFor="" className='ml-5py-1' >Origin</label><br/>
+                    <input  type="text" className=" input-box ml-5 pl-1 " name='origin' required/><br/>
                     <label htmlFor="" className='ml-5 py-1'>Destination</label><br/>
-                    <input  type='text' className='w-75 ml-5 pl-1' name='destination' required /><br/>
+                    <input  type='text' className='input-box ml-5 pl-1' name='destination' required /><br/>
                     <label htmlFor="" className="mr-5 pr-5 ml-5 py-1 " >From</label><label htmlFor="" className='ml-5 pl-5 py-1'>To</label><br/>
                     <input  type="month" className='inline-input mr-1 ml-5 pl-1' name='from' required />
                     <input  type="month" className='inline-input ml-1 pl-1'name='to' required /><br/><br/>

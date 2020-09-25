@@ -25,10 +25,13 @@
     border: none;
 }
 .inline-input{
-    width: 192px;
+    width: 192px !important;
+}
+.input-box{
+    width: 400px;
 }
 .submit{
-    width: 400px;
+    width: 400px !important ;
     margin-left: 40px;
 }
 h2{
