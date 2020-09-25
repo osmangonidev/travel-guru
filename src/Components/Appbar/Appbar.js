@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from "./Logo.png"
 import './Appbar.css'
 import {Link, BrowserRouter as Router} from "react-router-dom";
+import SearchIcon from '../../img/Screenshot/Search.png';
+import { IsLoggedContext } from '../../App';
 
-const Appbar = () => {
-    const navItem=['Home','Destination','Blog','Login'];
+const Appbar = (props) => {
+    const navItems=['Home','Destination','Blog'];
+    const [isLogged,setIsLogged]=useContext(IsLoggedContext) //if logged or not toggle login and log-out nav item
+
+    function handleLogOut(){ //no log-out route or component so it'shandled here
+        setIsLogged(false);
+    }
+
     return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light ">
@@ -14,10 +22,14 @@ const Appbar = () => {
                         <img className="navbar-brand logo ml-5" src={logo} alt=""/>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <form className="form-inline my-2 my-lg-0">
-                            <input size="50" className="form-control  pl-3" type="search" placeholder="Search your destination" aria-label="Search"></input>
+                            <input size="50" className="form-control  pl-3" id='search' type="search" placeholder='       Search your destination' aria-label="Search"></input>
                         </form>
                         <ul className="navbar-nav mr-auto mt-0 mt-lg-0">
-                        {navItem.map((item,count)=><li className="nav-item "><Link to={`/${item.toLowerCase()}`} className="nav-link"><a className={`item${navItem.indexOf(item)}`}>{item}</a> </Link></li>)}
+                        {navItems.map((item,count)=><li className="nav-item "><Link to={`/${item.toLowerCase()}`} className="nav-link"><a className={`item${navItems.indexOf(item)}`}>{item}</a> </Link></li>)}
+                        {
+                            isLogged?<li onClick={handleLogOut} className='nav-item'><a className='item4 nav-link'>Log-Out</a></li>
+                            :<li className='nav-item'><Link to='/login' className='nav-link'><a className='item4'>Login</a></Link> </li>
+                        }
                         </ul>
                         
                     </div>

@@ -3,14 +3,14 @@
     color:goldenrod;
     font-weight: bold;
 }
-img{
-    width: 100%;
-    margin:0px 20px;
-}
-.destination-info{
-    border-right: 1px solid rgb(100, 93, 93);
-}
 #hotel-wrapper{
     margin: 0px 30px;
+    margin-right: 10px !important;
 }
- 
+.hotel-info img{
+    width: 100%;
+    margin:0px 20px;
+    border: 2px solid gray !important;
+    border-radius: 7px;
+}
+

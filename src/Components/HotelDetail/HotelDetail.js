@@ -11,7 +11,7 @@ const HotelDetail = (props) => {
     return (
         <div id='hotel-wrapper ' className='row'>
         
-                <div className='col-7 hotel-info ml-2 mb-5'>
+                <div className='col-6 hotel-info ml-2 mb-5'>
                     
                         {
                             matchedItem.map(item=>{
@@ -40,7 +40,7 @@ const HotelDetail = (props) => {
                         }
                     
                 </div>
-                <div className="col-4">
+                <div className="col-4 mt-4 ml-5 map-wrapper">
                     <MapView coordinates={props.coordinates} ></MapView>
         
                 </div>  

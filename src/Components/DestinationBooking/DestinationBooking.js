@@ -9,11 +9,11 @@ const DestinationBooking = () => {
 
     return (
         <div className='row wrapper d-flex mx-5 px-5'>
-            <div className="col-md-5 description mr-3 p-3">
+            <div className="col-md-5 description mr-5 p-3">
                 <h2>{matchedItem.destination} </h2>
                 <p>{matchedItem.description} </p>
             </div>
-            <div className= "booking-form col-md-4 py-4  ">
+            <div className= "booking-form col-md-4 py-4  ml-5 ">
                 <form action="" onSubmit="">
                     <label htmlFor="" className='ml-5 py-1' >Origin</label><br/>
                     <input type="text" className="w-75 ml-5 pl-1 " /><br/>

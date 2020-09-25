@@ -1,24 +1,9 @@
-.img{
-    width: 200px ;
-}
-.img:hover{
-    border: 2px solid orange;
-    border-radius: 15px;
-}
-
-.wrapper{
-   margin: 20px !important;
-}
-.img-title{
-    position: relative;
-    top: -50px;
-    margin-left: 35px;
-    color:white;
-}
 body{
-    background-image:url(../../img/Image/Rectangle\ 1.png);
-    
+    background-image:url(../../img/Image/Rectangle\ 1.png);  
 }
+.wrapper{
+    margin: 20px !important;
+ }
 #destination-detail p{
     font-weight: bold;
     color:black;
@@ -28,4 +13,26 @@ body{
 }
 #destination-images button{
     background-color: transparent !important;
+}
+.img{
+    width: 200px ;
+}
+.img:hover{
+    border: 3px solid orange !important;
+    border-radius: 15px !important;
+}
+.img{
+    border-radius: 15px;
+}
+.img-title{
+    position: relative;
+    top: -50px;
+    margin-left: 35px;
+    color:white;
+}
+.right-arrow{
+    margin-right: 600px !important;
+}
+.left-arrow{
+    margin-right: 100px;
 }

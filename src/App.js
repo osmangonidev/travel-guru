@@ -9,6 +9,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import HotelDetail from './Components/HotelDetail/HotelDetail';
 import DestinationBooking from './Components/DestinationBooking/DestinationBooking';
 import MapView from './Components/Map/MapView';
+import ForgetPassword from './Components/Login/ForgetPassword/ForgetPassword';
 export const IsLoggedContext=createContext()
 
 function App() {
@@ -18,9 +19,7 @@ function App() {
     <Router>
       <div className="App">
         <Appbar></Appbar>
-        
       </div>
-      
         <Route exact path='/'>
           <Home></Home>
         </Route>
@@ -35,6 +34,9 @@ function App() {
         </PrivateRoute>
         <Route path='/login'>
           <Login></Login>
+        </Route>
+        <Route path='/password-forget'>
+          <ForgetPassword></ForgetPassword>
         </Route>
     </Router>
     </IsLoggedContext.Provider>

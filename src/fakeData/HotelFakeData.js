@@ -1,21 +1,21 @@
 import bedOne from '../img/Image/Rectangle 26.png'
 import bedTwo from '../img/Image/Rectangle 27.png'
-import bedeThree from '../img/Image/Rectangle 27.png'
+import bedeThree from '../img/Image/Rectangle 28.png'
 
 const HotelFakeData=[
     {
         destination:"cox's bazar",
         img:`${bedOne}`,
-        title:'Light bright airy stylish apt & safe peaceful stay',
-        description:'4guests  2bedrooms 2bed 2baths Wif Air conditioning Kitchen Cancellation flexibility aviliable',
+        title:' Safe and peaceful stay and luxurious room',
+        description:'6 guests  4bedrooms 2bed 2baths Wif Air conditioning Kitchen Cancellation flexibility aviliable',
         rating:"4.9(20)",
         cost:34
     },
     {
         destination:"cox's bazar",
         img:`${bedTwo}`,
-        title:'Light bright airy stylish apt & safe peaceful stay',
-        description:'4guests  2bedrooms 2bed 2baths Wif Air conditioning Kitchen Cancellation flexibility aviliable',
+        title:'Natural always fresh and clean room',
+        description:'4 guests  3bedrooms 2bed 2baths Wif Air conditioning Wash room Cancellation flexibility aviliable',
         rating:"4.(10)",
         cost:52
     },
@@ -23,7 +23,7 @@ const HotelFakeData=[
         destination:"cox's bazar",
         img:`${bedeThree}`,
         title:'Light bright airy stylish apt & safe peaceful stay',
-        description:'4guests  2bedrooms 2bed 2baths Wif Air conditioning Kitchen Cancellation flexibility aviliable',
+        description:'2guests  2bedrooms 2bed 2baths Wif Air conditioning Kitchen Cancellation flexibility aviliable',
         rating:"4.9(25)",
         cost:44
     },
