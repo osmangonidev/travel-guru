@@ -35,13 +35,13 @@ input[type='submit']{
     margin-left: 10px;
 }
 .google-signIn,.facebook-signIn{
-    padding: 11px 30px !important;
+    padding: 8px 30px !important;
     margin-bottom: 10px;
     border: 1px solid gray;
     border-radius: 30px;
 }
 .google-signIn{
-    padding: 11px 37px !important;
+    padding: 8px 37px !important;
 }
 .link-text{
     background-color: transparent !important;

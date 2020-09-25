@@ -17,7 +17,7 @@ const Home = () => {
     }
     const [count,setCount]=useState(1)
 
-    function handleLeftClick(){
+    function handleLeftIconClick(){
         if(count>1){
             setCount(count-1)
         }
@@ -28,7 +28,7 @@ const Home = () => {
         activeStyle(count)
     }
 
-    function handleRightClick(){
+    function handleRightIconClick(){
         if(count<3){
             setCount(count+1)
         }
@@ -63,7 +63,7 @@ const Home = () => {
             <div id='destination-detail' className="col-md-5 mr-4 p-4">
                 <h2 className="text-white">{ destination.destination} </h2>
                 <p>{destination.description} </p>
-                <button className='btn btn-warning px-3 py-2'><Link to={`/booking-${destination.destination.toLowerCase()}`}>Booking </Link></button>
+                <Link className='btn btn-warning px-4 py-1' to={`/booking-${destination.destination.toLowerCase()}`}>Booking </Link>
             </div>
             <div id='destination-images' className='d-flex justify-content-end col-md-7 row'>
                 {DestinationFakeData.map((item)=>{
@@ -77,7 +77,7 @@ const Home = () => {
                         )
                     }
                 )}
-                <span onClick={handleLeftClick} className='left-arrow '><ArrowBackIosIcon></ArrowBackIosIcon> </span><span onClick={handleRightClick} className=' right-arrow'><ArrowForwardIosIcon></ArrowForwardIosIcon> </span>
+                <span onClick={handleLeftIconClick} className='left-arrow '><ArrowBackIosIcon></ArrowBackIosIcon> </span><span onClick={handleRightIconClick} className=' right-arrow'><ArrowForwardIosIcon></ArrowForwardIosIcon> </span>
             </div>
         </div>
     );

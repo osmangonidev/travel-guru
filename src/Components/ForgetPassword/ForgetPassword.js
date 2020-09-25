@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import firebase from 'firebase';
 import FirebaseConfig from '../../FirebaseConfig';
+
 if (!firebase.apps.length) {
     firebase.initializeApp(FirebaseConfig);
  }
@@ -11,8 +12,6 @@ const ForgetPassword = () => {
     function handleOnChange(e){
         setEmail(e.target.value);
     }
-
-    console.log('emial: ',email)
 
     function handleSubmit(e){
         e.preventDefault();

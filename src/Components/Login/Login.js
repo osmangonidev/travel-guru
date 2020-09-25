@@ -51,7 +51,6 @@ const Login = () => {
         const newUserInfo={...user};
         newUserInfo[e.target.name]=e.target.value;
         setUser(newUserInfo)
-        console.log(user)
     }
 
     function handleCreateAccount(){

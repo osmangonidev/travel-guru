@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import logo from "./Logo.png"
 import './Appbar.css'
 import {Link, BrowserRouter as Router} from "react-router-dom";
-import SearchIcon from '../../img/Screenshot/Search.png';
 import { IsLoggedContext } from '../../App';
 import firebase from 'firebase';
 import FirebaseConfig from '../../FirebaseConfig';

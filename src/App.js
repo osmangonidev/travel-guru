@@ -10,6 +10,7 @@ import HotelDetail from './Components/HotelDetail/HotelDetail';
 import DestinationBooking from './Components/DestinationBooking/DestinationBooking';
 import MapView from './Components/Map/MapView';
 import ForgetPassword from './Components/ForgetPassword/ForgetPassword';
+
 export const IsLoggedContext=createContext()
 
 function App() {
